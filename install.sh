@@ -43,7 +43,7 @@ echo "...done"
 
 # xmobar
 echo "Installing xmobar dotfiles"
-ln -s $dir/xmobar/xmobarrc ~/.xmobar
+ln -s $dir/xmobar ~/.xmobar
 
 # alacritty
 echo "Installing alacritty dotfiles"
