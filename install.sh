@@ -8,7 +8,6 @@
 
 dir=$PWD                    # dotfiles directory
 olddir=~/.dotfiles_old             # old dotfiles backup directory
-# files="bashrc vimrc vim zshrc oh-my-zsh"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -43,7 +42,7 @@ echo "...done"
 
 # xmobar
 echo "Installing xmobar dotfiles"
-ln -s $dir/xmobar ~/.xmobar
+ln -s $dir/xmobar ~/.config/xmobar
 
 # alacritty
 echo "Installing alacritty dotfiles"
