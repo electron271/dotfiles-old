@@ -1,0 +1,4 @@
+# gitignore
+xmonad/build*
+xmonad/xmonad.errors
+xmonaod/xmonad-*

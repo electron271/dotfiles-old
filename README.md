@@ -2,6 +2,10 @@
 My personal dotfiles, designed to be adaptable and simple!
 
 ## Installation
+#### Dependencies:
+- Arch Linux installed
+- paru installed
+
 ```bash
 # Recommended method, will install to ~/.dotfiles
 git clone https://github.com/electron271/dotfiles.git ~/.dotfiles
