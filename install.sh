@@ -43,10 +43,16 @@ echo "...done"
 # xmobar
 echo "Installing xmobar dotfiles"
 ln -s $dir/xmobar ~/.config/xmobar
+echo "...done"
 
 # alacritty
 echo "Installing alacritty dotfiles"
 ln -s $dir/alacritty/alacritty.yml ~/.alacritty
+echo "...done"
+
+# nvim
+echo "Instsalling nvim dotfiles"
+ln -s $dir/nvim ~/.config/nvim
 echo "...done"
 
 # echo final notes

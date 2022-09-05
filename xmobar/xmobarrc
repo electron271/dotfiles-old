@@ -1,10 +1,10 @@
-Config { font = "xft:Hack Nerd Font:pixelsize=14:antialias=true:hinting=true"
-       , additionalFonts = []
+-- requires nerd-fonts-complete
+Config { font = "xft:Ubuntu Nerd Font:style=bold:pixelsize=14:antialias=true:hinting=true"
        , borderColor = "black"
        , border = TopB
-       , bgColor = "black"
-       , fgColor = "grey"
-       , alpha = 200
+       , bgColor = "#0d0e1a"
+       , fgColor = "#bfbfbf"
+       , alpha = 255
        , position = Top
        , textOffset = -1
        , iconOffset = -1
@@ -12,28 +12,22 @@ Config { font = "xft:Hack Nerd Font:pixelsize=14:antialias=true:hinting=true"
        , pickBroadest = False
        , persistent = False
        , hideOnStart = False
-       , iconRoot = "."
+       , iconRoot = ".xmonad/xpm"
        , allDesktops = True
        , overrideRedirect = True
        , textOutputFormat = Ansi
-       , commands = [ Run Weather "EGPF" ["-t","<station>: <tempC>C",
-                                          "-L","18","-H","25",
-                                          "--normal","green",
-                                          "--high","red",
-                                          "--low","lightblue"] 36000
+       , commands = [ Run Wireless "" [] 10
                     , Run Network "eth0" ["-L","0","-H","32",
                                           "--normal","green","--high","red"] 10
-                    , Run Network "eth1" ["-L","0","-H","32",
-                                          "--normal","green","--high","red"] 10
-                    , Run Cpu ["-L","3","-H","50",
-                               "--normal","green","--high","red"] 10
+                    , Run Cpu ["-L","3","-H","50"] 10
                     , Run Memory ["-t","Mem: <usedratio>%"] 10
                     , Run Swap [] 10
                     , Run Com "uname" ["-s","-r"] "" 36000
-                    , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
+                    , Run Date "%a %b %_d %Y %r" "date" 10
+                    , Run Com ".config/xmobar/trayer-padding-icon.sh" [] "trayerpad" 20
+                    , Run XMonadLog
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%cpu% | %memory% * %swap% | %eth0% - %eth1% }\
-                    \{ <fc=#ee9a00>%date%</fc>| %EGPF% | %uname%"
+       , template = "%XMonadLog% }{ <box color=#8fbcbb type=Bottom width=2><fc=#8fbcbb>  %cpu%</fc></box>    <box color=#a3be8c type=Bottom width=2><fc=#a3be8c> %memory%</fc></box>    <box color=#b48ead type=Bottom width=2><fc=#B48EAD> %wi% -  %eth0%</fc></box>    <box color=#88c0d0 type=Bottom width=2><fc=#88c0d0>%date%</fc></box>    <box color=#ebcb8b type=Bottom width=2><fc=#ebcb8b> %uname%</fc></box>    %trayerpad%"
        }

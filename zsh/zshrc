@@ -105,6 +105,8 @@ colorscript -r
 
 eval "$(zoxide init zsh)"
 
+eval "$(thefuck --alias)"
+
 eval "$(starship init zsh)"
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
