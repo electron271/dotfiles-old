@@ -4,11 +4,13 @@ My personal dotfiles, designed to be adaptable and simple!
 ## Installation
 #### Dependencies:
 - (recommended) Arch Linux
-- Alacritty
+- Kitty
 - XMonad
 - Xmobar
 - zsh + ohmyzsh
-- Hack Nerd Font
+- Nerd Fonts
+- Neofetch
+- Neovim
 
 ```bash
 # Recommended method, will install to ~/.dotfiles
