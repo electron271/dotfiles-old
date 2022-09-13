@@ -45,7 +45,7 @@ import Colors.Dracula
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal      = "alacritty"
+myTerminal      = "kitty"
 
 -- My browser
 myBrowser = "firefox"

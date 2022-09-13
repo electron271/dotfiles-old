@@ -46,20 +46,23 @@ ln -s $dir/xmobar ~/.config/xmobar
 echo "...done"
 
 # alacritty
-echo "Installing alacritty dotfiles"
-ln -s $dir/alacritty/alacritty.yml ~/.alacritty
+echo "Installing kitty dotfiles"
+ln -s $dir/kitty ~/.config/kitty
 echo "...done"
 
 # nvim
-echo "Instsalling nvim dotfiles"
+echo "Installing nvim dotfiles"
 ln -s $dir/nvim ~/.config/nvim
 echo "...done"
 
+# neofetch
+echo "Installing neofetch dotfiles"
+ln -s $dir/neofetch ~/.config/neofetch
+
 # echo final notes
 echo "All done!"
-echo "Final notes:
-The neovim config was not copied as it is a preset config. (nvchad)
+echo 'Final notes:
 This program is BYOI (bring your own install), this will not install any packages, please check the dependencies section.
 Dotfiles are made to fork, if you want, fork this repo and use this as a template!
 
-created by electron271, made with love and caffeine"
+created by electron271, made with love and caffeine'
