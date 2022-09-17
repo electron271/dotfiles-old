@@ -1,3 +1,4 @@
+-- vim: syntax=haskell
 -- requires nerd-fonts-complete
 Config { font = "xft:Ubuntu Nerd Font:style=bold:pixelsize=14:antialias=true:hinting=true"
        , borderColor = "black"
@@ -30,4 +31,3 @@ Config { font = "xft:Ubuntu Nerd Font:style=bold:pixelsize=14:antialias=true:hin
        , sepChar = "%"
        , alignSep = "}{"
        , template = "%XMonadLog% }{ <box color=#8fbcbb type=Bottom width=2><fc=#8fbcbb>  %cpu%</fc></box>    <box color=#a3be8c type=Bottom width=2><fc=#a3be8c> %memory%</fc></box>    <box color=#b48ead type=Bottom width=2><fc=#B48EAD> %wi% -  %eth0%</fc></box>    <box color=#88c0d0 type=Bottom width=2><fc=#88c0d0>%date%</fc></box>    <box color=#ebcb8b type=Bottom width=2><fc=#ebcb8b> %uname%</fc></box>    %trayerpad%"
-       }

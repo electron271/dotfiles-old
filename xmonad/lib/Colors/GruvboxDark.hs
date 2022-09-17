@@ -1,7 +1,5 @@
 module Colors.GruvboxDark where
 
-import XMonad
-
 colorScheme = "gruvbox-dark"
 
 colorBack = "#282828"

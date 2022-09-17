@@ -37,13 +37,12 @@ echo "...done"
 
 # xmonad
 echo "Installing xmonad dotfiles"
-ln -s $dir/xmonad ~/.xmonad
+ln -s $dir/xmonad ~/.config/xmonad
 echo "...done"
 
 # xmobar
 echo "Installing xmobar dotfiles"
 ln -s $dir/xmobar ~/.config/xmobar
-echo "...done"
 
 # alacritty
 echo "Installing kitty dotfiles"
