@@ -37,7 +37,7 @@ echo "...done"
 
 # xmonad
 echo "Installing xmonad dotfiles"
-ln -s $dir/xmonad ~/.config/xmonad
+ln -s $dir/xmonad ~/.xmonad
 echo "...done"
 
 # xmobar
